@@ -34,7 +34,8 @@ end
 
 def self.create(name:, grade:)
   name = Student.new(name, grade)
-  
+  name.save
+  name
 end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
