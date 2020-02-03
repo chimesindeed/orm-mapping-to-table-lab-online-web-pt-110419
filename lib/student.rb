@@ -32,7 +32,7 @@ def save
   
 end
 
-def self.create(name, grade)
+def self.create({name:, grade:})
   name = Student.new(name, grade)
 end
   # Remember, you can access your database connection anywhere in this class
